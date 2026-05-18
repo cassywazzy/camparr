@@ -1,0 +1,19 @@
+lidarr:
+  url: http://lidarr:8686
+  api_key: your-api-key-here
+
+bandcamp:
+  format: FLAC                    # FLAC, WAV, AIFF, ALAC, 320MP3, V0MP3, Ogg, AAC
+  search_cooldown_hours: 168      # don't re-search a failed album for 7 days
+  match_threshold: 80             # minimum fuzzy match score (0-100)
+  rate_limit_seconds: 2           # delay between Bandcamp requests
+
+downloads:
+  path: /downloads                # where bcdl-free saves files (container path)
+  library_path: /library          # Lidarr's music library (same mount as Lidarr's root folder)
+
+polling:
+  interval_seconds: 300           # how often to poll Lidarr's wanted list (5 min)
+
+healthchecks:
+  ping_url: ""                    # Healthchecks.io ping URL (e.g. https://hc.example.com/ping/uuid)

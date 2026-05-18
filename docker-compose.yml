@@ -1,0 +1,13 @@
+services:
+  camparr:
+    build: .
+    container_name: camparr
+    restart: unless-stopped
+    ports:
+      - "8585:8585"
+    volumes:
+      - ./config:/config
+      - /path/to/downloads:/downloads
+      - /path/to/music:/library
+    environment:
+      - TZ=America/Los_Angeles

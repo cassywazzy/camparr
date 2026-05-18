@@ -1,0 +1,6 @@
+beautifulsoup4>=4.12
+flask>=3.0
+free-bandcamp-downloader>=0.5
+pyyaml>=6.0
+rapidfuzz>=3.0
+requests>=2.31
